@@ -40,11 +40,7 @@ namespace SimpleTypes
             Console.WriteLine("Hi {0} {1}", FirstName, LastName);
             Console.WriteLine("You are {0} years old", age);
             Console.WriteLine("Your weight is {0}kg and your height is {1}m", weight, height);
-
-            //Console.WriteLine(age);
-            //Console.WriteLine(FirstName);
-            //Console.WriteLine(LastName);
-
+                      
             Console.ReadKey();
         }
     }
