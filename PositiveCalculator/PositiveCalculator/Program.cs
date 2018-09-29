@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace PositiveCalculator
 {
@@ -68,9 +65,7 @@ namespace PositiveCalculator
                         Console.WriteLine("Divided by 0 exception");
                     }
                 }
-
-
-
+                                          
                 // Math Power
                 if (operation == "Power" || operation == "power") {       // case insensitive
                     Console.Write("Input Power of Num1: ");
