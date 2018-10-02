@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2BB17CED-3CBC-41AD-AF4E-5B12497BE946}</ProjectGuid>
+    <ProjectGuid>{4F831C1A-11DC-4157-B9FB-387F71DDEEFF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleAppDay2</RootNamespace>
-    <AssemblyName>ConsoleAppDay2</AssemblyName>
+    <RootNamespace>ReturnWeekDaysApp</RootNamespace>
+    <AssemblyName>ReturnWeekDaysApp</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

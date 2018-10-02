@@ -1,2 +1,0 @@
-# HomeWork
-Types
