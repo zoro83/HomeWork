@@ -104,7 +104,6 @@ namespace ReturnWeekDaysApp
                                                             //poqratari hamaric
             Console.WriteLine(anyKey);
 
-
             Console.ReadKey();
         }
     }
