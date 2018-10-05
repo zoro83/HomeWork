@@ -13,7 +13,7 @@ namespace FigureArea
             Console.Write($"Select Shape \n1 - Rectangle \n2 - Square \n3 - Circle \nShape: ");
             string outArea;
                 switch (Console.ReadLine())
-            {   case "1": Console.WriteLine("Enter Rectangle Sides");
+            {   case "1": Console.Write($"Enter Rectangle Sides \nSide A = \n{Console.ReadLine()}");
                     outArea = $"Rectangle Area is egal to {Convert.ToDouble(Console.ReadLine()) * (Convert.ToDouble(Console.ReadLine()))}"; break;
                 case "2": Console.WriteLine("Enter Square Side");
                     outArea = $"Square Area is egal to {Math.Pow(Convert.ToDouble(Console.ReadLine()),2)}"; break;
