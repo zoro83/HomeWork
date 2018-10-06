@@ -19,7 +19,8 @@ namespace for_ex5
             B = Convert.ToInt32(Console.ReadLine());
             int count = 0;
             int sum = 0;
-            int multiplyBy3 = 0;
+            string multiplyBy3 = " ";
+            bool flag = true;
             if (A < B)
             {   // start of exercise 6, 7
                 for (int i = A; i <= B; i++) 
@@ -28,24 +29,22 @@ namespace for_ex5
                     sum += i;
                     Console.WriteLine($"{i} belong to [A, B]");
 
+                    if (i % 3 == 0 && flag) // start of exercise 8,
+                    {
+                        //Console.WriteLine($"The first multiplying by 3 numbers of the [A, B] segment is equal to'{i}'");
+                        multiplyBy3 = $"The first multiplying by 3 numbers of the [A, B] segment is equal to'{i}'";
+                        flag = false;
+
+                    }
+
                 }
                 Console.WriteLine($"Count of integer numbers in [A, B] segment is equal to {count}");
                 // end of exercise 6
                 Console.WriteLine($"Sum of integer numbers in [A, B] segment is equal to {sum}");
                 // end of exercise 7
-                // start of exercise 8
-                for (int i = A; i <= B; i++)
-                {
-                    if (i % 3 == 0)
-                    {
-                        Console.WriteLine($"The first multiplying by 3 numbers of the [A, B] segment is equal to'{i}'");
-                        break;
-                    }                   
-                }
-                // end of exercise 8                
-            }
-            else {
-                Console.WriteLine("Incorrect input");
+                Console.WriteLine(multiplyBy3);
+                // end exercise 8
+                
             }
 
             Console.ReadKey();
