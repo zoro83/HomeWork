@@ -51,7 +51,8 @@ namespace N_DigitNumber
             //int signed1stNum = number / ((int)Math.Pow(10, N - 2)) % 10;
             //Console.WriteLine(signed1stNum);
 
-            //Console.WriteLine(number >= 0? sum: sum+signed1stNum );
+            //Console.WriteLine(number >= 0? sum: sum+signed1stNum );            
+            Console.WriteLine(a);
             Console.ReadKey();
 
 
