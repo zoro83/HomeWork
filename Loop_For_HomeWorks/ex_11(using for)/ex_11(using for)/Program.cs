@@ -12,7 +12,6 @@ namespace ex_11_using_for_
         {
             string inputNum = Console.ReadLine();
             int N = Convert.ToInt32(inputNum);
-            int digit = inputNum.Length;
             decimal sum = 1m;
             for (int i = 1; i <= N; i++)
             {
