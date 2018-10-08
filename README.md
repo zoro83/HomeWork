@@ -2,9 +2,6 @@
 <h2><p align="center"> HomeWork
    
   </p></h2>
+  - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
 <p>I study c # in ISTC </p>
-<text font-size="16" x="10" y="20">
-    <tspan fill="red">Hello</tspan>,
-    <tspan fill="green">world</tspan>!
-  </text>
 </body>
