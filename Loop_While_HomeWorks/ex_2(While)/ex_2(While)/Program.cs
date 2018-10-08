@@ -15,12 +15,15 @@ namespace ex_2_While_
             n = Convert.ToInt32(Console.ReadLine());
             int i = 0;
             int sum = 0;
+            //ex_3
             while (i <= n && n / 10 == 0)
             {
                 sum += i;
                 i++;
             }
             Console.WriteLine((n>=0)? $"{sum}":"incorrect format");
+            //ex_4
+
             Console.ReadKey();
         }
     }
