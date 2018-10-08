@@ -1,5 +1,6 @@
-<h3><p align="center"> HomeWork
+<body style="background-color:powderblue;">
+<h2><p align="center"> HomeWork
    
-  </p></h3>
-<p style= "color: rgba(255,255,255,.9)";>I study c # in ISTC </p>
-<h1 style="background-color:DodgerBlue;">Hello World</h1>
+  </p></h2>
+<p>I study c # in ISTC </p>
+</body>
