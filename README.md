@@ -1,12 +1,6 @@
 
-<head>
-<style>
-   .letter {
-    color: red;
-    font-size: 200%;
-   }  HomeWork
+<h3><p align="center">  HomeWork
    I study c # in ISTC {
     color: rgb(49, 151, 116);
    }
-  </style>
-    </head> 
+  </p></h3>
