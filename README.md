@@ -1,4 +1,4 @@
-<h3><p align="center"; style="color:red;"> HomeWork
+<h3><p align="center"> HomeWork
    
   </p></h3>
-<p>I study c # in ISTC </p>
+<p style="color:red;">I study c # in ISTC </p>
