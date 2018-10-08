@@ -1,4 +1,5 @@
 # HomeWork
+<head>
 <style>
    .letter {
     color: red;
@@ -8,3 +9,4 @@
     color: rgb(49, 151, 116);
    }
   </style>
+    </head> 
