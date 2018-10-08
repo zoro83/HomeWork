@@ -29,7 +29,7 @@ namespace ex_4_5_while_
                 sum += i;
                 i += 2;
             }
-            Console.WriteLine($"\n'{sum}', ");
+            Console.WriteLine($"\n{sum}");
 
             Console.ReadKey();
         }
