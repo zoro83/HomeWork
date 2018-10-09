@@ -36,6 +36,7 @@ namespace PictureApp
                     Console.WriteLine();
             }
             Console.ReadKey();
+
         }
     }
 }
