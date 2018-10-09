@@ -17,14 +17,10 @@ namespace PictureApp
 
             for (int i = 0; i < N; i = Math.Abs(i) + 1)
             {
-                //Console.WriteLine();
                 for (int j = 1; j <= 2 * N - 1; j++)
                 {
                     Console.Write((j >= N - i && j <= N + i) ? visible : unvisible);
-                    //Console.Write(delete != (2 * N - 1) / 2?"   ":str);
-                    //delete++;
                 }
-
                 Console.WriteLine();
             }
                 for (int p = 1; p <= N-1; p++)
