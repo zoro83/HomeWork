@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureApp", "PictureApp\PictureApp.csproj", "{FF66D94D-D7B5-4E44-842D-8F95429642EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF66D94D-D7B5-4E44-842D-8F95429642EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF66D94D-D7B5-4E44-842D-8F95429642EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF66D94D-D7B5-4E44-842D-8F95429642EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF66D94D-D7B5-4E44-842D-8F95429642EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42F9FF90-6041-44D1-B0DD-E32C6CBDEF46}
+	EndGlobalSection
+EndGlobal
