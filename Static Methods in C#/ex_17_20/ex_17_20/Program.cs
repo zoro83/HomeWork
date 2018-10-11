@@ -97,6 +97,7 @@ namespace ex_17_20
             }
             return maxCharacter;
         }
+        //******************************
         /// <summary>
         /// output Maximum digit of number
         /// output Minimum digit of number
@@ -112,12 +113,35 @@ namespace ex_17_20
             Console.WriteLine("Minimum digit is equal {0}", minDigit);
             Console.WriteLine($"({maxDigit} - {minDigit})^2 = {result}");
         }
+        //***************************************8
+       static int GetMinOddDigit(int num)
+        {
+            int min = 10;
+            while (num != 0)
+            {
+                int digit = num % 10;
+                if (digit < min)
+                {
+                    min = digit;
+                }
+                num = num / 10;
+                if (min == 0)
+                {
+                    break;
+                }
+                Console.WriteLine(min);
+            }
+            Console.WriteLine(min);
+            return min;
+        }
 
+    
         static void Main(string[] args)
         {
             Console.Write("Enter integer number for some operation \nn = ");
             int n = int.Parse(Console.ReadLine());
             MaxMinDifferenceSquare(n);
+            GetMinOddDigit(n);
 
             Console.ReadKey();
         }
