@@ -10,9 +10,12 @@ namespace AllDivisors
     {
         /// <summary>
         /// print all the divisors of the given number
+        /// print sum all the divisors of the given number
+        /// print count all the divisors of the given number
+        /// print sum / count
         /// </summary>
         /// <param name="num"> int</param>
-        static void AllnNumberDivisors(int num)
+        static void AllnNumberDivisorsSumCount(int num)
         {
             int fixNum = num;
             int sum = 0;
@@ -51,7 +54,7 @@ namespace AllDivisors
         {
             Console.Write("Enter integer number print all the divisors of the given number \nn = ");
             int n = int.Parse(Console.ReadLine());
-            AllnNumberDivisors(n);
+            AllnNumberDivisorsSumCount(n);
             Console.ReadKey();
         }
     }
