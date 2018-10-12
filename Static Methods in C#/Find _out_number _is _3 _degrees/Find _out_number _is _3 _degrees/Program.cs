@@ -8,6 +8,11 @@ namespace Find__out_number__is__3__degrees
 {
     class Program
     {
+        /// <summary>
+        /// Find out if the given number is 3 degrees
+        /// Print Yes or No
+        /// </summary>
+        /// <param name="num">int</param>
         static void Find_out_number_is_3_degrees(int num)
         {
             int i = 3;
