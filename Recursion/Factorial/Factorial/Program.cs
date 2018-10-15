@@ -29,6 +29,7 @@ namespace Factorial
             Console.Write("Enter N for counting N! \nN = ");
             int N = byte.Parse(Console.ReadLine());
             Console.WriteLine("{0}! = {1}", N, Factorial(N));
+
             Console.ReadKey();
         }
     }
