@@ -8,6 +8,9 @@ namespace ex_28
 {
     class Program
     {
+        // Խնդիր_28:
+        // Ներածել n թիվը։ Արտածել yes, եթե այն հավասար է իր թվանշանների գումարի կրկնապատիկին, no՝ հակառակ դեպքում։
+
         /// <summary>
         /// Return sum of digits
         /// </summary>
