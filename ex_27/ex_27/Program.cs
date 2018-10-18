@@ -9,11 +9,11 @@ namespace ex_27
     class Program
     {
         /// <summary>
-        /// reversing and adding 0 between digits of number
+        /// Reversing and adding 0 between digits of number
         /// </summary>
         /// <param name="num"></param>
         /// <returns></returns>
-        static string ReversAndNullBetweenDigits(int num)
+        static void ReversAndNullBetweenDigits(int num)
         {
             byte N = (byte)Convert.ToString(num).Length;
             string str = " ";
@@ -27,7 +27,6 @@ namespace ex_27
                 num /= 10;
             }
 
-            return str;
         }
         static void Main(string[] args)
         {
