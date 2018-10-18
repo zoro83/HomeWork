@@ -44,15 +44,15 @@ namespace ex_30
         /// </summary>
             static void OtherFunction()
             {
-                for (int i = 1; i < 10; i++)
+                for (byte i = 1; i < 10; i++)
                 {
-                    for (int j = 0; j < 10; j++)
+                    for (byte j = 0; j < 10; j++)
                     {
-                        for (int k = 0; k < 10; k++)
+                        for (byte k = 0; k < 10; k++)
                         {
-                            for (int q = 0; q < 10; q++)
+                            for (byte q = 0; q < 10; q++)
                             {
-                                int dif = 9 * i + 2 * j - 11 * k - 2 * q; 
+                                byte dif = (byte)(9 * i + 2 * j - 11 * k - 2 * q); 
                                 if (i != j && i != k && i != q && j != k && j != q && k != q && dif == 0)
                                 {
                                     Console.WriteLine($"{i}{j}{k}{q}");
