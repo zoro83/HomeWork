@@ -16,7 +16,6 @@ namespace ex_27
         static void ReversAndNullBetweenDigits(int num)
         {
             byte N = (byte)Convert.ToString(num).Length;
-            string str = " ";
             byte[] digit = new byte[2 * N];
             for (byte i = 0; i < N; i ++)
             {
