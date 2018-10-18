@@ -8,6 +8,11 @@ namespace MethodWithArrayParameter
 {
     class Program
     {
+        /// <summary>
+        /// Incressing Or Decressing Given Array
+        /// </summary>
+        /// <param name="arr">array</param>
+        /// <param name="flag">bool</param>
         static void IncressingOrDecressingArray(int[] arr, bool flag)
         {
             int[] newArr = new int[arr.Length];
