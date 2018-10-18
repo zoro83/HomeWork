@@ -8,6 +8,11 @@ namespace ex_27
 {
     class Program
     {
+        /// <summary>
+        /// reversing and adding 0 between digits of number
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns></returns>
         static string ReversAndNullBetweenDigits(int num)
         {
             byte N = (byte)Convert.ToString(num).Length;
