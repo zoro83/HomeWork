@@ -41,10 +41,10 @@ namespace MethodWithArrayParameter
             int[] arr = { 8, 3, 44, 77, -44, 1,-129};
 
             Console.WriteLine("True");
-            IncressingOrDecressingArray(arr, true);
+            IncressingOrDecressingArray(arr, false);  // or input true
 
-            Console.WriteLine("False");
-            IncressingOrDecressingArray(arr, false);
+            //Console.WriteLine("False");
+            //IncressingOrDecressingArray(arr, false);
             Console.ReadKey();
         }
     }
