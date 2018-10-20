@@ -87,7 +87,7 @@ namespace SortPrintRandomArray
             {
                 for (int i = 0; i < (int)cloneArr.Length / 2; i++)
                 {
-                    Swap(cloneArr, i, cloneArr.Length - i);
+                    Swap(cloneArr, i, cloneArr.Length - 1 - i);
                 }
             }
             return cloneArr;
@@ -100,8 +100,11 @@ namespace SortPrintRandomArray
             int[] arry = { 8, 5, 66, 4, 1 };
             // Swap(arr, 0, 2);
 
-            SortArray(arry, true);
-            //PrintArray(arry);
+            arry = SortArray(arry, true);
+            PrintArray(arry);
+            Console.WriteLine();
+            arry = SortArray(arry, false);
+            PrintArray(arry);
             Console.ReadKey();
         }
     }
