@@ -52,7 +52,9 @@ namespace ex_32
 
         static void Main(string[] args)
         {
+            Console.Write("Recursion method \n1 + 1/(1!) + 1/(2!) + 1/(3!) + … + 1/(N!) = ");
             Console.WriteLine(SumOfSequence(22));
+            Console.Write("Loop Method \n1 + 1/(1!) + 1/(2!) + 1/(3!) + … + 1/(N!) = ");
             Console.WriteLine(SumOfSequence_(22));
             Console.ReadKey();
         }
