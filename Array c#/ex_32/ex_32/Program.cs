@@ -8,7 +8,9 @@ namespace ex_32
 {
     class Program
     {
-        
+        //Խնդիր_32:
+        //Տրված է N բնական թիվը։ Օգտագործելով մեկ ցիկլ հաշվել 1 + 1/(1!) + 1/(2!) + 1/(3!) + … + 1/(N!) 
+        //գումարը(N!-ով նշանակված է 1-ից N թվերի արտադրյալը։ Ստացված թիվը հանդիսանում է e հաստատունի մոտավոր արժեքը)։
         static double SumOfSequence(int N)
         {
             double sum = 0;
@@ -25,38 +27,31 @@ namespace ex_32
             }
 
             return sum;
-        } 
+        }
         /// <summary>
         /// e = 1 + 1/(1!) + 1/(2!) + 1/(3!) + … + 1/(N!) 
         /// </summary>
         /// <param name="N"></param>
         /// <returns></returns>
-        static double SumOfSequence_(int N)
+        static double Exponential(int N)
         {
-            double sequenceIndex = 1;
-            double sum = 0;
-            double[][] jaggedSeq = new double[N][];
-            for (int i = 0; i < N; i++)
+            double tempN = 1;
+            double sum = 1;
+            for (int i = 1; i <= N; i++)
             {
-                jaggedSeq[i] = new double[i];
-                for (int j = 0; j < jaggedSeq[i].Length; j++)
-                {
-                    jaggedSeq[i][j] = 1.0 / (j +1);
-                    sequenceIndex *= jaggedSeq[i][j];
-                }
-                sum += sequenceIndex;
-
+                tempN *= 1.0 / (double)(i);
+                sum += tempN;
             }
             return sum;
         }
 
-        static void Main(string[] args)
-        {
-            Console.Write("Recursion method \n1 + 1/(1!) + 1/(2!) + 1/(3!) + … + 1/(N!) = ");
-            Console.WriteLine(SumOfSequence(22));
-            Console.Write("Loop Method \n1 + 1/(1!) + 1/(2!) + 1/(3!) + … + 1/(N!) = ");
-            Console.WriteLine(SumOfSequence_(22));
-            Console.ReadKey();
-        }
+    static void Main(string[] args)
+    {
+        Console.Write("Recursion method \n1 + 1/(1!) + 1/(2!) + 1/(3!) + … + 1/(N!) = ");
+        Console.WriteLine(SumOfSequence(22));
+        Console.Write("Loop Method \n1 + 1/(1!) + 1/(2!) + 1/(3!) + … + 1/(N!) = ");
+        Console.WriteLine(Exponential(22));
+        Console.ReadKey();
     }
+}
 }
