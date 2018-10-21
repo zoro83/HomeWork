@@ -30,8 +30,8 @@ namespace Task_32
         }
         static void Main(string[] args)
         {
-            //int n = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(SequenseSum(1.5, 22));
+            double res = SequenseSum(1.5, 22);
+            Console.WriteLine(res);
             Console.ReadKey();
 
         }
