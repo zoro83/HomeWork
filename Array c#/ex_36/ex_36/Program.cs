@@ -14,8 +14,8 @@ namespace ex_36
         /// <summary>
         /// ln(1+X) = X–X2/2 + X3/3 –…+ (–1)N–1·XN/N 
         /// </summary>
-        /// <param name="X"></param>
-        /// <param name="N"></param>
+        /// <param name="X">double</param>
+        /// <param name="N">integer</param>
         /// <returns></returns>
         static double Ln(double X, int N)
         {
