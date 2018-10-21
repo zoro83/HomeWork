@@ -48,7 +48,6 @@ namespace ex_35
                 tempN *= 1.0 / (double)((2 * i + 1) * (2 * i));
 
                 sum = sum + Math.Pow(-1, i) * Math.Pow(X, 2 * i + 1) * tempN;
-
             }
             return sum;
         }
