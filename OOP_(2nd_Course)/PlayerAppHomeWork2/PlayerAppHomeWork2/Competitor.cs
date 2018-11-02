@@ -16,6 +16,12 @@ namespace PlayerAppHomeWork2
         }
         private Player player = new Player();
 
+        /// <summary>
+        /// Returns an array of the club players
+        /// </summary>
+        /// <param name="player"></param>
+        /// <param name="club"></param>
+        /// <returns></returns>
         public string[] GetClubPlayers(Player[] player, Competitor club)
         {
             int count = 0;
