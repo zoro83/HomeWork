@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JurassicApp_Homework_3", "ZooApp_Homework_3\JurassicApp_Homework_3.csproj", "{4F0FBD9F-8800-4E0C-9675-1247C7211545}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F0FBD9F-8800-4E0C-9675-1247C7211545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F0FBD9F-8800-4E0C-9675-1247C7211545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F0FBD9F-8800-4E0C-9675-1247C7211545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F0FBD9F-8800-4E0C-9675-1247C7211545}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61D21F43-3D97-41B3-BD49-D4BC69EE89A1}
+	EndGlobalSection
+EndGlobal
