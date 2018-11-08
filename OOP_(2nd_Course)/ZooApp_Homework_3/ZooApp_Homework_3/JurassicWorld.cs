@@ -8,21 +8,23 @@ namespace ZooApp_Homework_3
 {
     class JurassicWorld
     {
-        public string Type { get; set; } //Тип
-        public string Diet { get; set; } //Питание: Carnivores(Плотоядные), Herbivores(Травоядные), Omnivore(Всеядное)
-        public string AgeCategories { get; set; } //baby, young, adult, elder
-        public int Damage { get; set; } // 0-10 point
-        public int Speed { get; set; } // 0-100 point
+        private string type; //Тип
+        private string name; // TiRex, Raptors...Aquatic...
+        private string diet; //Питание: Carnivores(Плотоядные), Herbivores(Травоядные), Omnivore(Всеядное)
+        
+        static public string AgeCategories { get; set; } //Baby,Young, Adult, Elder
+        static public int Damage { get; set; } // 0-10 point
+        static public int Speed { get; set; } // 0-100 point
 
         public virtual string Info { get; } = "Dinosaurs are a diverse group of reptiles of the clade Dinosauria";
 
-        public virtual string Characteristic()
+        public string Characteristic()
         {
-            return $"Type: {Type} \nDiet{Diet} \nAgeAgeCategories: {AgeCategories} " +
-                $"\nDamage: {Damage} \nSpeed: {Speed} \nInfo{Info}";
+            return $"Diet: {diet} \nName: {name} \nAgeAgeCategories: {AgeCategories} " +
+                $"\nDamage: {Damage} \nSpeed: {Speed} \nInfo: {Info}";
         }
 
-        public string DamageLevel(int damage)
+        public string DamageLevel()
         {
             if (Damage >= 0 && Damage < 4)
                 return "Low";
@@ -33,7 +35,7 @@ namespace ZooApp_Homework_3
             else
                 return "Error";
         }
-        public string SpeedLevel(int speed)
+        public string SpeedLevel()
         {
             if (Speed >= 0 && Speed < 34)
                 return "Low";
@@ -44,5 +46,40 @@ namespace ZooApp_Homework_3
             else
                 return "Error";
         }
+        public string GetDynType()
+        {
+            return type;
+        }
+        public JurassicWorld()
+        {
+
+        }
+        public JurassicWorld(string type)
+        {
+            this.type = type;
+        }
+        public JurassicWorld(string type, string name) : this(type)
+        {
+            this.name = name;
+        }
+        public JurassicWorld(string type, string name, string diet) : this(type: type, name: name)
+        {
+            this.diet = diet;
+        }
+        public JurassicWorld(string type, string name, string diet, string ageCategories) : this(type, name, diet)
+        {
+            AgeCategories = ageCategories;
+        }
+        public JurassicWorld(string type, string name, string diet, string ageCategories, int damage)
+            : this(type, name, diet, ageCategories)
+        {
+            Damage = damage;
+        }
+        public JurassicWorld(string type, string name, string diet, string ageCategories, int damage, int speed)
+            : this(type, name, diet, ageCategories, damage)
+        {
+            Speed = speed;
+        }
+
     }
 }

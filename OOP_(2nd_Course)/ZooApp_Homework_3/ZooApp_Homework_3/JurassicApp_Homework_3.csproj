@@ -43,19 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aerial.cs" />
+    <Compile Include="AerialDynosaurs\Aerial.cs" />
     <Compile Include="AerialDynosaurs\Archaeopteryx.cs" />
     <Compile Include="AerialDynosaurs\Quetzalcoatlus.cs" />
-    <Compile Include="Aquatic.cs" />
+    <Compile Include="AquaticDynosaurs\Aquatic.cs" />
     <Compile Include="AquaticDynosaurs\Megalodon.cs" />
-    <Compile Include="Archelon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="JurassicWorld.cs" />
     <Compile Include="TerrestialDinosaurs\Diplodocid.cs" />
     <Compile Include="TerrestialDinosaurs\Raptor.cs" />
     <Compile Include="TerrestialDinosaurs\T-Rex.cs" />
-    <Compile Include="Terrestrial.cs" />
+    <Compile Include="TerrestialDinosaurs\Terrestrial.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
