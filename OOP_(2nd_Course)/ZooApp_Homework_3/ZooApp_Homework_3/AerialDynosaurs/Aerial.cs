@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZooApp_Homework_3.AerialDynosaurs
 {
-    class Aerial:JurassicWorld
+    class Aerial:Dinosaurs
     {
         public Aerial() : base(type: "Aerial")
         {
@@ -27,6 +27,6 @@ namespace ZooApp_Homework_3.AerialDynosaurs
 
         }
         public override string Info { get; } = "Aerial dinosaurs could flight";
-     
+       
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZooApp_Homework_3.AquaticDynosaurs
 {
-    class Aquatic : JurassicWorld
+    class Aquatic : Dinosaurs
     {
         public Aquatic() : base(type: "Aquatic")
         {
@@ -28,5 +28,6 @@ namespace ZooApp_Homework_3.AquaticDynosaurs
         }
         public override string Info { get; } = "Aquatic dinosaurs lived in the water for most or all of its lifetime";
 
+       
     }
 }

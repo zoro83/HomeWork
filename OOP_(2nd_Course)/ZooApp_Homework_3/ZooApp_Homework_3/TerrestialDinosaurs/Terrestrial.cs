@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZooApp_Homework_3.TerrestialDinosaurs
 {
-    class Terrestrial : JurassicWorld
+    class Terrestrial : Dinosaurs
     {
         //can walk on land
         public Terrestrial() : base(type: "Terrestrial")
@@ -22,10 +22,12 @@ namespace ZooApp_Homework_3.TerrestialDinosaurs
 
         }
         public Terrestrial(string name, string diet, string ageCategories, int damage, int speed)
-            : base(type: "Terrestrial", name: name, diet: diet, ageCategories: AgeCategories, damage: Damage, speed: Speed)
+            : base(type: "Terrestrial", name: name, diet: diet, ageCategories: ageCategories, damage: damage, speed: speed)
         {
 
         }
         public override string Info { get; } = "Terrestrial dinosaurs could walk on land";
+
+       
     }
 }
