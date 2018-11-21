@@ -33,7 +33,7 @@ namespace ComplexNumbers
             Z = Z.Multiplication(X, Y);
             Print(Z);
 
-            Z = Z.Absalute(X, Y);
+            Z = Z.Absalute(Z);
             Print(Z);
 
             Console.ReadKey();

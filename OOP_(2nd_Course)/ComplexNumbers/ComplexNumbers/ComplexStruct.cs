@@ -55,9 +55,9 @@ namespace ComplexNumbers
             return new Complex((a.x * b.x + a.y * b.y) / (Math.Pow(b.x, 2) + Math.Pow(b.y, 2)),
                 (a.y * b.x - a.x * b.y) / (Math.Pow(b.x, 2) + Math.Pow(b.y, 2)));
         }
-        public Complex Absalute(Complex a, Complex b)
+        public Complex Absalute(Complex a)
         {
-            return new Complex(Math.Pow((Math.Pow(b.x, 2) + Math.Pow(b.y, 2)), 0.5), 0);
+            return new Complex(Math.Pow((Math.Pow(a.x, 2) + Math.Pow(a.y, 2)), 0.5), 0);
         }
     }
 
