@@ -16,7 +16,7 @@ namespace ComplexNumbers
         {
             Complex X = new Complex(9, -2);
             Print(X);
-            Complex Y = new Complex(0, 7);
+            Complex Y = new Complex(0, 0);
             Print(Y);
             Complex Z = new Complex(-6, 0);
             Print(Z);
@@ -34,6 +34,9 @@ namespace ComplexNumbers
             Print(Z);
 
             Z = Z.Absalute(Z);
+            Print(Z);
+
+            Z = Z.Division(X, Y);
             Print(Z);
 
             Console.ReadKey();
