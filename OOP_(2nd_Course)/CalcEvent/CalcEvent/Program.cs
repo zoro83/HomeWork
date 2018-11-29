@@ -46,7 +46,7 @@ namespace CalcEvent
 
             float sum = 0;
 
-            Console.WriteLine("***Input number one Than operation(+,-,*,/,%,^) nand finaly number two***");
+            Console.WriteLine("***Input number one Than operation(+,-,*,/,%,^,q=Exit) nand finaly number two***");
             float num1 = float.Parse(Console.ReadLine());
 
             char operation = Convert.ToChar(Console.ReadLine());
@@ -97,12 +97,15 @@ namespace CalcEvent
                         Console.WriteLine("Wrong operation");
                         break;
                 }
+                if (!flag)
+                {
                 Console.WriteLine(new string('-', 22));
                 Console.WriteLine(sum);
                 num1 = sum;
                 operation = Convert.ToChar(Console.ReadLine());
                 num2 = float.Parse(Console.ReadLine());
                 Console.WriteLine("=");
+                }
             }
 
         }
