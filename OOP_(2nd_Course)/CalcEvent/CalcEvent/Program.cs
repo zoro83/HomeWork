@@ -19,6 +19,7 @@ namespace CalcEvent
     class Program
     {
 
+        #region Operations
         public static float HandllerAdd(float num1, float num2)
         {
             return num1 + num2;
@@ -35,16 +36,25 @@ namespace CalcEvent
         {
             return num1 / num2;
         }
+        #endregion
+       
         static void Main(string[] args)
         {
             MyCalc myCalc = new MyCalc();
+
             bool flag = false;
+
             float sum = 0;
-            Console.WriteLine("***Input Number one and number two for operation***");
+
+            Console.WriteLine("***Input number one Than operation(+,-,*,/,%,^) nand finaly number two***");
             float num1 = float.Parse(Console.ReadLine());
-            char operation = char.Parse(Console.ReadLine());
+
+            char operation = Convert.ToChar(Console.ReadLine());
+
             float num2 = float.Parse(Console.ReadLine());
+
             Console.WriteLine("=");
+
             while (!flag)
             {
                 switch (operation)
@@ -70,22 +80,29 @@ namespace CalcEvent
                         Console.WriteLine(sum);
                         break;
                     case '%':
-                        myCalc.CalcEvent += (n, m) => n * m / 100;
+                        myCalc.CalcEvent += (x, y) => x * y / 100; // Lambda Expression
                         sum = myCalc.EventInvoker(num1, num2);
                         Console.WriteLine(sum);
                         break;
+                    case '^':
+                        myCalc.CalcEvent += (x, y) => (float)Math.Pow(x, y); // Lambda Expression
+                        sum = myCalc.EventInvoker(num1, num2);
+                        Console.WriteLine(sum);
+                        break;
+                    case 'q':
+                        flag = true;
+                        break;
+                        
                     default:
                         Console.WriteLine("Wrong operation");
                         break;
                 }
-
                 Console.WriteLine(new string('-', 22));
                 Console.WriteLine(sum);
                 num1 = sum;
-                operation = char.Parse(Console.ReadLine());
+                operation = Convert.ToChar(Console.ReadLine());
                 num2 = float.Parse(Console.ReadLine());
                 Console.WriteLine("=");
-                //Console.ReadKey();
             }
 
         }
