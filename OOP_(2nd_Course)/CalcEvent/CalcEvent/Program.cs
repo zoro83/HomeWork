@@ -37,7 +37,69 @@ namespace CalcEvent
             return num1 / num2;
         }
         #endregion
-       
+        public static float FloatPars(string str)
+        {
+            float res = 0;
+            try
+            {
+                res = float.Parse(str);
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Field Name:  {0}", e.TargetSite);
+                Console.WriteLine("Class Name:  {0}", e.TargetSite.DeclaringType);
+                Console.WriteLine("Field type:  {0}", e.TargetSite.MemberType);
+                Console.WriteLine("Message:     {0}", e.Message);
+                Console.WriteLine("Source:      {0}", e.Source);
+                Console.WriteLine("DateTime:    {0}", DateTime.Now);
+                Console.WriteLine("StackTrace:  {0}", e.StackTrace);
+                Console.WriteLine("GetType:     {0}", e.GetType());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Field Name:  {0}", e.TargetSite);
+                Console.WriteLine("Class Name:  {0}", e.TargetSite.DeclaringType);
+                Console.WriteLine("Field type:  {0}", e.TargetSite.MemberType);
+                Console.WriteLine("Message:     {0}", e.Message);
+                Console.WriteLine("Source:      {0}", e.Source);
+                Console.WriteLine("DateTime:    {0}", DateTime.Now);
+                Console.WriteLine("StackTrace:  {0}", e.StackTrace);
+                Console.WriteLine("GetType:     {0}", e.GetType());
+            }
+            return res;
+        }
+        public static char CharPars(string str)
+        {
+            char res = ' ';
+            try
+            {
+                res = char.Parse(str);
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Field Name:  {0}", e.TargetSite);
+                Console.WriteLine("Class Name:  {0}", e.TargetSite.DeclaringType);
+                Console.WriteLine("Field type:  {0}", e.TargetSite.MemberType);
+                Console.WriteLine("Message:     {0}", e.Message);
+                Console.WriteLine("Source:      {0}", e.Source);
+                Console.WriteLine("DateTime:    {0}", DateTime.Now);
+                Console.WriteLine("StackTrace:  {0}", e.StackTrace);
+                Console.WriteLine("GetType:     {0}", e.GetType());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Field Name:  {0}", e.TargetSite);
+                Console.WriteLine("Class Name:  {0}", e.TargetSite.DeclaringType);
+                Console.WriteLine("Field type:  {0}", e.TargetSite.MemberType);
+                Console.WriteLine("Message:     {0}", e.Message);
+                Console.WriteLine("Source:      {0}", e.Source);
+                Console.WriteLine("DateTime:    {0}", DateTime.Now);
+                Console.WriteLine("StackTrace:  {0}", e.StackTrace);
+                Console.WriteLine("GetType:     {0}", e.GetType());
+            }
+            return res;
+        }
+
         static void Main(string[] args)
         {
             MyCalc myCalc = new MyCalc();
@@ -47,11 +109,11 @@ namespace CalcEvent
             float sum = 0;
 
             Console.WriteLine("***Input number one Than operation(+,-,*,/,%,^,q=Exit) nand finaly number two***");
-            float num1 = float.Parse(Console.ReadLine());
+            float num1 = FloatPars(Console.ReadLine());     // try to convert to float
 
-            char operation = Convert.ToChar(Console.ReadLine());
+            char operation = CharPars(Console.ReadLine());  // try to convert to char
 
-            float num2 = float.Parse(Console.ReadLine());
+            float num2 = FloatPars(Console.ReadLine());     // try to convert to float
 
             Console.WriteLine("=");
 
@@ -92,19 +154,19 @@ namespace CalcEvent
                     case 'q':
                         flag = true;
                         break;
-                        
+
                     default:
                         Console.WriteLine("Wrong operation");
                         break;
                 }
                 if (!flag)
                 {
-                Console.WriteLine(new string('-', 22));
-                Console.WriteLine(sum);
-                num1 = sum;
-                operation = Convert.ToChar(Console.ReadLine());
-                num2 = float.Parse(Console.ReadLine());
-                Console.WriteLine("=");
+                    Console.WriteLine(new string('-', 22));
+                    Console.WriteLine(sum);
+                    num1 = sum;
+                    operation = CharPars(Console.ReadLine());   // try to convert to char
+                    num2 = FloatPars(Console.ReadLine());       // try to convert to float
+                    Console.WriteLine("=");
                 }
             }
 
