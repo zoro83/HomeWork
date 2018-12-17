@@ -36,9 +36,9 @@ namespace Advance.Dictionary
             charTranlsation.Add('v', "վ");      charTranlsation.Add('V', "Վ");
             charTranlsation.Add('w', "վ");      charTranlsation.Add('W', "Վ");
             charTranlsation.Add('x', "խ");      charTranlsation.Add('X', "Խ");
-            charTranlsation.Add('y', "յ");     charTranlsation.Add('Y', "Յ");
+            charTranlsation.Add('y', "յ");      charTranlsation.Add('Y', "Յ");
             charTranlsation.Add('z', "զ");      charTranlsation.Add('Z', "Զ");
-            charTranlsation.Add('@', "ը");
+            charTranlsation.Add('@', "ը");      charTranlsation.Add('.', ":");
 
             Console.WriteLine("Latin leters armenian.ConvertTo(armenian)");
             string inputText = "";
