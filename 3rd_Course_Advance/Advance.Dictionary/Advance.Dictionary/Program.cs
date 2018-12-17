@@ -22,6 +22,10 @@ namespace Advance.Dictionary
             str = str.Replace("Ev", "Եվ");
             str = str.Replace("dz", "ձ");
             str = str.Replace("Dz", "Ձ");
+            str = str.Replace("vo", "ո");
+            str = str.Replace("Vo", "Ո");
+            str = str.Replace("ph", "փ");
+            str = str.Replace("Ph", "Փ");
             return str;
         }
         static void Main(string[] args)
