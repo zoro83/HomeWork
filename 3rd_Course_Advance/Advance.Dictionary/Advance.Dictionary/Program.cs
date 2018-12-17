@@ -3,11 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Collections;
 namespace Advance.Dictionary
 {
+    public class LettersDictionary
+    {
+
+    }
     class Program
     {
+        static string Spelling(string str) //ուղղագրություն
+        {
+            str = str.Replace("ch", "չ");
+            str = str.Replace("gh", "ղ");
+            str = str.Replace("Ch", "Չ");
+            str = str.Replace("Gh", "Ղ");
+            str = str.Replace("ev", "և");
+            str = str.Replace("Ev", "Եվ");
+            str = str.Replace("dz", "ձ");
+            str = str.Replace("Dz", "Ձ");
+            return str;
+        }
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -51,15 +67,14 @@ namespace Advance.Dictionary
 
                 Console.WriteLine(e.Message);
             }
-
-            //char[] InputByLetters = new char[inputText.Length];
+            inputText = Spelling(inputText);
             string outputText = "";
 
             for (int i = 0; i < inputText.Length; i++)
             {
-                if (inputText[i] >= '@' && inputText[i] <= 'Z' || inputText[i] >= 'a' && inputText[i] <= 'z' || inputText[i] == '.')
+                if (inputText[i] >= '@' && inputText[i] <= 'Z' || 
+                    inputText[i] >= 'a' && inputText[i] <= 'z' || inputText[i] == '.')
                 {
-                    //InputByLetters[i] = inputText[i];
                     outputText += charTranlsation[inputText[i]];
                 }
                 else
