@@ -26,17 +26,17 @@ namespace Advance.Dictionary
             charTranlsation.Add('l', "լ");      charTranlsation.Add('L', "Լ");
             charTranlsation.Add('m', "մ");      charTranlsation.Add('M', "Մ");
             charTranlsation.Add('n', "ն");      charTranlsation.Add('N', "Ն");
-            charTranlsation.Add('o', "օ");      charTranlsation.Add('O', "Օ");
+            charTranlsation.Add('o', "ո");      charTranlsation.Add('O', "Ո");
             charTranlsation.Add('p', "պ");      charTranlsation.Add('P', "Պ");
             charTranlsation.Add('q', "ք");      charTranlsation.Add('Q', "Ք");
-            charTranlsation.Add('r', "ռ");      charTranlsation.Add('R', "Ռ");
+            charTranlsation.Add('r', "ր");      charTranlsation.Add('R', "Ր");
             charTranlsation.Add('s', "ս");      charTranlsation.Add('S', "Ս");
             charTranlsation.Add('t', "տ");      charTranlsation.Add('T', "Տ");
             charTranlsation.Add('u', "ու");     charTranlsation.Add('U', "Ու");
             charTranlsation.Add('v', "վ");      charTranlsation.Add('V', "Վ");
             charTranlsation.Add('w', "վ");      charTranlsation.Add('W', "Վ");
             charTranlsation.Add('x', "խ");      charTranlsation.Add('X', "Խ");
-            charTranlsation.Add('y', "ու");     charTranlsation.Add('Y', "Ու");
+            charTranlsation.Add('y', "յ");     charTranlsation.Add('Y', "Յ");
             charTranlsation.Add('z', "զ");      charTranlsation.Add('Z', "Զ");
             charTranlsation.Add('@', "ը");
 
@@ -57,7 +57,7 @@ namespace Advance.Dictionary
 
             for (int i = 0; i < inputText.Length; i++)
             {
-                if (inputText[i] >= 64 && inputText[i] <= 90 || inputText[i] >= 97 && inputText[i] <= 122)
+                if (inputText[i] >= '@' && inputText[i] <= 'Z' || inputText[i] >= 'a' && inputText[i] <= 'z')
                 {
                     //InputByLetters[i] = inputText[i];
                     outputText += charTranlsation[inputText[i]];
