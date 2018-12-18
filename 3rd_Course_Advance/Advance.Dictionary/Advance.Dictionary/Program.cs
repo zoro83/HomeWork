@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 using System.Collections;
 namespace Advance.Dictionary
 {
-    public class LettersDictionary
+    public static class SpellingExtension
     {
-
-    }
-    class Program
-    {
-        static string Spelling(string str) //ուղղագրություն
+        public static string Spelling(this string str) //ուղղագրություն
         {
             str = str.Replace("ch", "չ");
             str = str.Replace("gh", "ղ");
@@ -26,8 +22,16 @@ namespace Advance.Dictionary
             str = str.Replace("Vo", "Ո");
             str = str.Replace("ph", "փ");
             str = str.Replace("Ph", "Փ");
+            str = str.Replace("th", "թ");
+            str = str.Replace("Th", "Թ");
+            str = str.Replace("ye", "ե");
+            str = str.Replace("Ye", "Ե");
             return str;
         }
+    }
+    class Program
+    {
+        
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -71,7 +75,7 @@ namespace Advance.Dictionary
 
                 Console.WriteLine(e.Message);
             }
-            inputText = Spelling(inputText);
+            inputText = inputText.Spelling();
             string outputText = "";
 
             for (int i = 0; i < inputText.Length; i++)
