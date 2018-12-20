@@ -11,12 +11,22 @@ namespace Advance.FileMaker
     {
         static void WriteFile(string newPath)
         {
-            using (FileStream fs = new FileStream(newPath, FileMode.Open, FileAccess.Write))
+            using (StreamWriter sw = File.AppendText(newPath))
             {
-                StreamWriter sw = new StreamWriter(fs);
+                //StreamWriter sw = new StreamWriter(fs);
                 Console.WriteLine("Write some text to file");
                 string sometext = Console.ReadLine();
-                File.WriteAllText(newPath, sometext);
+                sw.WriteLine(sometext);
+            }
+        }
+        static void ReadFile(string newPath)
+        {
+            using (FileStream fs = new FileStream(newPath, FileMode.Open, FileAccess.Read))
+            {
+                StreamReader sr = new StreamReader(fs);
+                string allTextByLine = sr.ReadLine();
+                Console.WriteLine("All text in file");
+                Console.WriteLine(allTextByLine);
             }
         }
 
@@ -82,6 +92,7 @@ namespace Advance.FileMaker
             {
                 WriteFile(newPath);
             }
+            ReadFile(newPath);
         }
         static void Main(string[] args)
         {
