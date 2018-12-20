@@ -31,9 +31,9 @@ namespace Oppen.All.Files._01
                 Console.WriteLine(ex.Message);
             }
         }
+       
         static void Main(string[] args)
         {
-
             string dirName = "C:\\";
 
 
