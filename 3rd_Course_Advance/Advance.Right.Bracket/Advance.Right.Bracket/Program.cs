@@ -22,16 +22,15 @@ namespace Advance.Right.Bracket
             }
             return onlyBrackets;
         }
-
         public static bool ChackRightBrackets(string inputStr)
         {
-            string str = inputStr;
+            string str = OnlyBrackets(inputStr);
             while (str.Contains("{}") || str.Contains("[]") || str.Contains("<>") || str.Contains("()"))
             {
-                    str = str.Replace("{}", "");
-                    str = str.Replace("[]", "");
-                    str = str.Replace("<>", "");
-                    str = str.Replace("()", "");
+                str = str.Replace("{}", "");
+                str = str.Replace("[]", "");
+                str = str.Replace("<>", "");
+                str = str.Replace("()", "");
             }
 
             return (str == "") ? true : false;
@@ -40,9 +39,8 @@ namespace Advance.Right.Bracket
         static void Main(string[] args)
         {
             string str = "{ld0(pp)<k[loop]flor{hi}>(pi[<>pool])}";
-            string onlyBrackets = OnlyBrackets(str);
-            Console.WriteLine(onlyBrackets);
-            Console.WriteLine(ChackRightBrackets(onlyBrackets)); // Output true or false
+            Console.WriteLine(str);
+            Console.WriteLine(ChackRightBrackets(str)); // Output true or false
             Console.ReadKey();
         }
     }
