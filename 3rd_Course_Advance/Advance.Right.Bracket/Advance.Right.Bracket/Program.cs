@@ -19,7 +19,6 @@ namespace Advance.Right.Bracket
                 {
                     onlyBrackets += str[i];
                 }
-
             }
             return onlyBrackets;
         }
@@ -27,31 +26,12 @@ namespace Advance.Right.Bracket
         public static bool ChackRightBrackets(string inputStr)
         {
             string str = inputStr;
-
             while (str.Contains("{}") || str.Contains("[]") || str.Contains("<>") || str.Contains("()"))
             {
-                try
-                {
                     str = str.Replace("{}", "");
-                }
-                catch { }
-                try
-                {
                     str = str.Replace("[]", "");
-                }
-                catch { }
-                try
-                {
                     str = str.Replace("<>", "");
-                }
-                catch { }
-                try
-                {
                     str = str.Replace("()", "");
-                }
-                catch { }
-
-
             }
 
             return (str == "") ? true : false;
