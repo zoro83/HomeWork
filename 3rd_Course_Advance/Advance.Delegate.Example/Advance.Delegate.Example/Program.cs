@@ -37,7 +37,7 @@ namespace Advance.Delegate.Example
             {
                 writer();
             }
-            int k;
+            int k = 5;
             for (k = 0; k < 10; k++)
             {
             }
