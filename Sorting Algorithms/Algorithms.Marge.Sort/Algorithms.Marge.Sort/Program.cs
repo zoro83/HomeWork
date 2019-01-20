@@ -72,8 +72,6 @@ namespace Algorithms.Marge.Sort
                 Console.Write(item + " ");
             }
             Console.WriteLine();
-
-
             Console.ReadKey();
         }
     }
