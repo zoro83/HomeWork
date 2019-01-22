@@ -12,6 +12,7 @@ namespace Selection.Sort
     {
         public static void Swap(int[] arr, int index1, int index2)
         {
+
             if (arr[index1] != arr[index2])
             {
                 int temp = arr[index2];
