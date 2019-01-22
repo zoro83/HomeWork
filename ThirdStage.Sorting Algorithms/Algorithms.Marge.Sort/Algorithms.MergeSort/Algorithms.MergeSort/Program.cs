@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Selection.Sort
 {
-    // https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm
-    // https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
+     // https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm
+     // https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
     class Program
     {
         public static void Swap(int[] arr, int index1, int index2)
