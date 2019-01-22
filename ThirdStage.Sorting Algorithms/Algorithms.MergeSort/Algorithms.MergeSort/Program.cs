@@ -8,6 +8,7 @@ namespace Selection.Sort
 {
     // https://www.tutorialspoint.com/data_structures_algorithms/selection_sort_algorithm.htm
     // https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html
+
     class Program
     {
         public static List<int> MergeSort(List<int> unsorted)
