@@ -1,22 +1,25 @@
-# :star: OOP Profesional :star:
-## This repository is meant to be used for learning  purposes :exclamation::exclamation:
-## :pushpin: Work with text.System IO
-| System.IO | C# |
-|:--------------|:----------------:|
-| [FindDirectories](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.coddingschool.System.IO) |  [:white_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/blob/master/ISTC.coddingschool.System.IO/Program.cs) 
+# C# Programming Course  <img src="http://itlc.comp.dkit.ie/wp-content/uploads/2017/01/csharp.png" align="right" width="150px" height="150px" /> 
+--------------------
+#### C# (pronounced C sharp) is a general-purpose, multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.[16] It was developed around 2000 by Microsoft within its .NET initiative and later approved as a standard by Ecma (ECMA-334) and ISO (ISO/IEC 23270:2018). C# is one of the programming languages designed for the Common Language Infrastructure.C# was designed by Anders Hejlsberg, and its development team is currently led by Mads Torgersen. 
 
-## :pushpin: Attributes
-| Attributes | C# |
+--------------------
+## Programming Basics :pushpin:
+| Folder | Content |
 |:--------------|:----------------:|
-| [1](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attributes.1)|[:white_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attributes.1)|
-| [2](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attributes) |  [:white_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attributes)|
-| [3](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attribut.exem2) |  [:white_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attribut.exem2)|
-| [4](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attribute.2) |  [:white_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attribute.2)|
-| [5](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attributes.exemple2) |  [:white_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attributes.exemple2)|
+| FirtStage.Starter |  [:white_check_mark:](https://github.com/zoro83/HomeWork/tree/master/FirtStage.Starter) 
 
-## :pushpin: Reflection
-| Reflection | C# |
+## Essential OOP :pushpin:
+| Folder | Content |
 |:--------------|:----------------:|
-| [ReflectionOfProjectMyCar](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ReflectionOfProjectMyCar) |  [:white_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/blob/master/ReflectionOfProjectMyCar/Program.cs) 
-| [Reflection.Assembly](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Reflection.Assembly) |  [:white_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Reflection.Assembly) 
-| 
+| SecondStage.OOP |  [:white_check_mark:](https://github.com/zoro83/HomeWork/tree/master/SecondStage.OOP) 
+
+## Advance :pushpin:
+| Folder | Content |
+|:--------------|:----------------:|
+| ThirdStage.Advance |  [:white_check_mark:](https://github.com/zoro83/HomeWork/tree/master/ThirdStage.Advance) 
+
+## Algorithms and Data Structures.Measuring Performance,Sorting Algorithms ,Stack, Queue :pushpin:
+| Folder | Content |
+|:--------------|:----------------:|
+| ThirdStage.Sorting Algorithms |  [:white_check_mark:](https://github.com/zoro83/HomeWork/tree/master/ThirdStage.Sorting%20Algorithms) 
+
