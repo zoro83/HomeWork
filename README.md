@@ -1,7 +1,22 @@
-<h1><p align="center"> HomeWork
-   
-  </p></h1>
-   
-```
-   I study c # in ISTC 
-```
+# :star: OOP Profesional :star:
+## This repository is meant to be used for learning  purposes :exclamation::exclamation:
+## :pushpin: Work with text.System IO
+| System.IO | C# |
+|:--------------|:----------------:|
+| [FindDirectories](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.coddingschool.System.IO) |  [:white_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/blob/master/ISTC.coddingschool.System.IO/Program.cs) 
+
+## :pushpin: Attributes
+| Attributes | C# |
+|:--------------|:----------------:|
+| [1](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attributes.1)|[:white_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attributes.1)|
+| [2](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attributes) |  [:white_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attributes)|
+| [3](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attribut.exem2) |  [:white_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attribut.exem2)|
+| [4](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attribute.2) |  [:white_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attribute.2)|
+| [5](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attributes.exemple2) |  [:white_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Attributes.exemple2)|
+
+## :pushpin: Reflection
+| Reflection | C# |
+|:--------------|:----------------:|
+| [ReflectionOfProjectMyCar](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ReflectionOfProjectMyCar) |  [:white_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/blob/master/ReflectionOfProjectMyCar/Program.cs) 
+| [Reflection.Assembly](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Reflection.Assembly) |  [:white_check_mark:](https://github.com/Pargev1993/ISTC.coddingschool.OOP.Prof/tree/master/ISTC.codingschool.OOP.Reflection.Assembly) 
+| 
