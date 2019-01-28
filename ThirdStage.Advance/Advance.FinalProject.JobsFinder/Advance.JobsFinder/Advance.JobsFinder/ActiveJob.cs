@@ -8,17 +8,8 @@ namespace Advance.JobsFinder
 {
     public class ActiveJob
     {
-        //List<string> activeJob = new List<string>();
-        public List<string> ActiveJobs = new List<string>();
-        public void AddActiveJob(string job)
-        {
-            ActiveJobs.Add(job);
-
-        }
-        public List<string> SetActiveJobs(string job)
-        {
-            return ActiveJobs;
-
-        }
+        public string ActiveJobName { get; set; }
+        public string Data { get; set; }
+        public string Location { get; set; }
     }
 }

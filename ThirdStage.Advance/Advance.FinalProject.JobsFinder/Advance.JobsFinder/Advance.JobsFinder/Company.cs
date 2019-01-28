@@ -20,13 +20,13 @@ namespace Advance.JobsFinder
         public string CompanyPhone { get; set; }
         public string CompanyAddress { get; set; }
         public string CompanyLogo { get; set; }
-        public List<string> ActiveJobs = new List<string>();
-        public void AddActiveJob(string job)
+        public List<ActiveJob> ActiveJobs = new List<ActiveJob>();
+        public void AddActiveJob(ActiveJob job)
         {
             ActiveJobs.Add(job);
 
         }
-        public List<string> SetActiveJobs(string job)
+        public List<ActiveJob> SetActiveJobs()
         {
             return ActiveJobs;
 
@@ -35,7 +35,10 @@ namespace Advance.JobsFinder
         {
             CompanyName = companyName;
         }
+        public Company()
+        {
 
+        }
 
 
     }
