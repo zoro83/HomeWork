@@ -12,6 +12,7 @@ namespace Advance.JobsFinder
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             Company company1 = new Company();
             //ActiveJob job1 = new ActiveJob();
             //ActiveJob job2 = new ActiveJob();
@@ -21,36 +22,23 @@ namespace Advance.JobsFinder
             //job2.ActiveJobName = "C#";
             //job2.Data = "10/1/2019";
             //job2.Location = "Yerevan";
-            //company1.AddActiveJob(job1);
-            //company1.AddActiveJob(job2);
-            //foreach (var item in company1.ActiveJobs)
-            //{
-            //    Console.WriteLine(item.ActiveJobName);
-            //    Console.WriteLine(item.Data);
-            //    Console.WriteLine(item.Location);
-            //}
-
-            //string url = @"C:\Users\USER-X\BetConstruct _ Staff.am";
-            //HtmlDocument document = new HtmlDocument();
-            //string text = File.ReadAllText(@"C:\Users\USER-X\BetConstruct _ Staff.am.html");
-            ////Console.WriteLine(text);
-            //document.LoadHtml(text);
-
-            //HtmlNodeCollection selectNodes = document.DocumentNode.SelectNodes("//p[@class='professional-skills-description']");
-            ////string innerText = selectSingleNode.InnerText;  //"//div[@class='search_hit']"
-            //foreach (var item in selectNodes)
-            //{
-            //    Console.WriteLine(item.InnerText);
-            //}
-            ////Console.WriteLine(innerText);
-            ///
+   
             string url = @"C:\Users\USER-X\BetConstruct _ Staff.am.html";
             HTML_Nodes.CompanySeter(company1, url);
-            Console.WriteLine(company1.CompanyName);
-            Console.WriteLine(company1.Industry);
-            Console.WriteLine(company1.CompanyType);
-            Console.WriteLine(company1.CompanyAddress);
-            Console.WriteLine(company1.CompanyWebsite);
+            Console.WriteLine("Company Name: {0}", company1.CompanyName);
+            Console.WriteLine("Company Industry: {0}", company1.CompanyIndustry);
+            Console.WriteLine("Company Type: {0}", company1.CompanyType);
+            Console.WriteLine("Company Address: {0}", company1.CompanyAddress);
+            Console.WriteLine("Company Website: {0}", company1.CompanyWebsite);
+            Console.WriteLine("Company About: {0}", company1.CompanyAbout);
+            Console.WriteLine("Company About More: {0}", company1.CompanyAboutMore);
+            Console.WriteLine("Company Num of Employees: {0}", company1.NumOfEmployees);
+            Console.WriteLine("Company Phone: {0}", company1.CompanyPhone);
+            Console.WriteLine("Company Views: {0}", company1.Views);
+            foreach (var item in company1.CompanyJobs)
+            {
+                Console.WriteLine("Company Active Job: {0}", item);
+            }
             Console.ReadKey();
 
         }
