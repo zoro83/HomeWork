@@ -24,6 +24,7 @@ namespace Advance.JobsFinder
         public int    Views { get; set; }
         public List<ActiveJob> ActiveJobs = new List<ActiveJob>();
         public List<string> CompanyJobs = new List<string>();
+        public List<string> Companies = new List<string>();
         public void AddActiveJob(ActiveJob job)
         {
             ActiveJobs.Add(job);
