@@ -42,7 +42,6 @@ namespace Advance.JobsFinder
             {
                 CompanyView(companiesList[i]);
             }
-            
             Console.ReadKey();
 
         }
